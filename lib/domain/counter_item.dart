@@ -1,3 +1,4 @@
+import 'package:counter_app/ui/ui_setting.dart';
 import 'package:flutter/material.dart';
 
 class Counter {
@@ -60,12 +61,20 @@ class _CounterWidgetState extends State<CounterWidget> {
               },
               child: Text(
                 widget.counter.title,
-                style: const TextStyle(fontSize: 24),
+                style: const TextStyle(
+                  color: AppColor.appTextStrong1,
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
             ),
             Text(
               widget.counter.count.toString(),
-              style: const TextStyle(fontSize: 48),
+              style: const TextStyle(
+                color: AppColor.appTextStrong1,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             IconButton(
               icon: const Icon(Icons.add),
